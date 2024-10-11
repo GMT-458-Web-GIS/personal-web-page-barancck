@@ -6,6 +6,7 @@
     <title>Baran Çiçek - Personal Website</title>
     <link rel="stylesheet" href="style-light-dark.css">
     <link rel="icon" href="space-shuttle.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
             <img src="a-baran-edit.JPG" alt="Baran Çiçek" class="profile-pic">
             <h1>Baran Çiçek</h1>
             <p>Geomatics Engineer | Entrepreneur | GIS Enthusiast</p>
-
+            
             <label class="switch">
                 <input type="checkbox" id="dark-mode-toggle">
                 <span class="slider"></span>
@@ -69,17 +70,23 @@
             <p>Mobile Mapping and Navigation Systems course with a focus on advanced GNSS processing and autonomous navigation strategies.</p>
         </div>
     </section>
-
+    <section class="map">
+            <!-- Title for the section -->
+            <h1 class="map-title">Places I Have Visited</h1>
+            <!-- This div will hold the map -->
+            <div id="map"></div>
+    </section>
     <section class="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:barancicek0658@gmail.com">barancicek0658@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/barancicek" target="_blank">linkedin.com/in/barancicek</a></p>
     </section>
 
+
     <footer>
         <p>© 2024 Baran Çiçek</p>
     </footer>
-
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

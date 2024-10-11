@@ -29,6 +29,7 @@ header {
     margin-bottom: 10px;
 }
 
+
 /* Toggle Switch Styling */
 .switch {
     position: relative;
@@ -76,8 +77,22 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+
+/* Center the map container */
+#map {
+    width: 70%;  /* Adjust as needed */
+    height: 400px;  /* Adjust the height as needed */
+    margin: 0 auto;  /* Center the map */
+    display: block;  /* Ensure it's treated as a block-level element */
+    border: 1px solid #ccc;  /* Optional: to see the map boundary */
+}
+
+
+
+
+
 /* Dark Mode */
-body.dark-mode {
+body.dark-mode  {
     background-color: #121212;
     color: #f4f4f4;
 }
@@ -87,7 +102,7 @@ header.dark-mode {
     color: #f4f4f4;
 }
 
-.about, .skills, .experience, .education, .contact {
+.about, .skills, .experience, .education, .map, .contact {
     margin: 20px;
     padding: 20px;
     background-color: white;
@@ -111,3 +126,4 @@ footer {
 footer.dark-mode {
     background-color: #1e1e1e;
 }
+
